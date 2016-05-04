@@ -33,7 +33,7 @@ header { background-color: #FF7400;padding:20px;}
 
 ul {list-style-type: none;}
 
-nav {text-align:left;width:910px;}
+nav {margin-left:0px;background-color:#FFC89A;}
 
 nav ul li {display:inline;font-size:16px;padding:24px 24px 24px 0px;}
 
