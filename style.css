@@ -32,7 +32,7 @@ nav {text-align:left;width:910px;}
 
 nav ul li {display:inline;font-size:16px;padding:24px;}
 
-.main-section {max-height:500px;width:100%;}
+.main-section {height:500px;width:100%;background:#999999;}
 
 #contentLeft {
     color:white;
@@ -55,4 +55,4 @@ nav ul li {display:inline;font-size:16px;padding:24px;}
 
 .grid-container {padding-top:20px;}
 
-footer {background-color:#FF7400;padding:20px;color:white;text-align:center;}
+footer {background-color:#FF7400;padding:20px;color:white;text-align:left;}
