@@ -32,6 +32,7 @@
         <div class="grid-66">
             <section class="container blog-item" id="contentLeft">
             <article>
+                <?php
                 include("connect2DB.php");
                 $sql = "SELECT * from blogView'";
 
@@ -52,7 +53,7 @@
                     echo $row['submitter'];
 
                     echo "</p>";
-                }
+                }?>
 
 
             </article>
