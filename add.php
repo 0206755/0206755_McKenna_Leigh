@@ -32,7 +32,9 @@
         <div class="grid-66" id="margin-auto">
             <h1>Add Blog Item</h1>
             <section class="container" id="contentLeft">
-            <form>
+
+            if ($SERVER['REQUEST_METHOD'] === 'GET') {
+                <form action="add.php" method="post">
             <label id="label-margin">Entry Title:</label> <input type="text" name="entry_title" required><br />
                 <label id="label-margin">Entry Summary:</label> <textarea name="entry_summary" required></textarea><br />
                 <label id="label-margin">Category:</label>
@@ -47,6 +49,43 @@
                 <input type="submit" name="submit" value="submit">
 
             </form>
+            }
+            elseif ($SERVER[REQUEST_METHOD] === 'POST') {
+
+                $entryTitle = $_GET['entryTitle'];
+                $entrySummary = $_GET['entrySummary'];
+                $category = $_GET['category'];
+                $submitter = $_GET['submitter'];
+                }
+
+                $servername = "ap-cdbr-azure-east-c.cloudapp.net";
+                $username = "b9b4f1f2913587";
+                $password = "81a7c479";
+                $dbname = "myDB";
+
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                // Check connection
+                if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+                }
+
+                $sql = "INSERT INTO blogView (entryTitle,entrySummary,category,submitter)
+                VALUES ($entryTitle,$entrySummary,$category,$submitter)";
+
+                if ($conn->query($sql) === TRUE) {
+                echo "New blog article added successfully";
+                } else {
+                echo "Whoops - Error: " . $sql . "<br>" . $conn->error;
+                }
+
+                $conn->close();
+
+                Header("Location: blog.php");
+
+            else {
+                Header("Location: index.php");
+                }
             </section>
         </div>
 
