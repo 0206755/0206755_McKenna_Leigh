@@ -35,7 +35,7 @@ ul {list-style-type: none;}
 
 nav {text-align:left;width:910px;}
 
-nav ul li {display:inline;font-size:16px;padding:24px;}
+nav ul li {display:inline;font-size:16px;padding:24px 24px 24px 0px;}
 
 #main-section {min-height:550px;width:100%;background:#999999;}
 
