@@ -32,7 +32,7 @@ nav {text-align:left;width:910px;}
 
 nav ul li {display:inline;font-size:16px;padding:24px;}
 
-#main-section {min-height:500px;width:100%;background:#999999;}
+#main-section {min-height:550px;width:100%;background:#999999;}
 
 #contentLeft {
     color:white;
@@ -50,7 +50,7 @@ nav ul li {display:inline;font-size:16px;padding:24px;}
     position:relative;
     left:-10px!important;
     /*top:-2px;*/
-    background:white;
+    background-color:white;
     max-height:500px;
 }
 
