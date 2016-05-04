@@ -33,7 +33,7 @@
             <h1>Add Blog Item</h1>
             <section class="container" id="contentLeft">
                 <?php
-                if ($SERVER['REQUEST_METHOD'] === 'GET') { ?>
+                if ($_SERVER['REQUEST_METHOD'] === 'GET') { ?>
             <form>
             <label id="label-margin">Entry Title:</label> <input type="text" name="entry_title" required><br />
                 <label id="label-margin">Entry Summary:</label> <textarea name="entry_summary" required></textarea><br />
