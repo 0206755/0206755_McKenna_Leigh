@@ -22,7 +22,7 @@ header { background-color: #FF7400;padding:20px;}
 
 
 
-.blogFoto {width:300px;float:left;padding:5px 10px 10px 0px;}
+.blogFoto {width:300px;float:left;padding:5px 10px 10px -10px;}
 
 #no-padding {padding:0px;}
 
@@ -32,14 +32,14 @@ nav {text-align:left;width:910px;}
 
 nav ul li {display:inline;font-size:16px;padding:24px;}
 
-.main-section {background:white;width:100%;}
+.main-section {max-height:500px;width:100%;}
 
 #contentLeft {
-    color:black;
+    color:white;
     position:relative;
     /*left:-8px!important;
     top:-12px;*/
-    background:white;
+    /*background:white;*/
 }
 
 .grid-33 {position:relative;right:-20px;}
