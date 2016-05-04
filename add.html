@@ -33,8 +33,8 @@
             <h1>Add Blog Item</h1>
             <section class="container" id="contentLeft">
             <form>
-            <label id="label-margin">Entry Title:</label> <input type="text" name="entry_title"><br />
-                <label id="label-margin">Entry Summary:</label> <textarea name="entry_summary"></textarea><br />
+            <label id="label-margin">Entry Title:</label> <input type="text" name="entry_title" required><br />
+                <label id="label-margin">Entry Summary:</label> <textarea name="entry_summary" required></textarea><br />
                 <label id="label-margin">Category:</label>
                 <select name="entry_category">
                 <option name="Work">Work</option>
@@ -42,7 +42,7 @@
                 <option name="Family">Family</option>
 
             </select><br/>
-                <label id="label-margin">Submitted By:</label> <input type="text" name="entry_title"><br />
+                <label id="label-margin">Submitted By:</label> <input type="text" name="entry_title" required><br />
                 <input type="submit" name="submit" value="submit">
 
             </form>
