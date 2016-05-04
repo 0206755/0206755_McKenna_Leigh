@@ -34,13 +34,13 @@
             <article>
                 <?php
                 include("connect2DB.php");
-                $sql = "SELECT * from blogView'";
+                $sql = "SELECT * from blogview'";
 
                 $result = mysqli_query($db, $sql);
                 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
-                
+
                 while($row = mysqli_fetch_array( $result )) {
                 // Print out the contents
                 echo "<p>";
