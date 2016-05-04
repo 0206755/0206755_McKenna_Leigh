@@ -24,7 +24,7 @@ main {
 
 header { background-color: #FF7400;padding:20px;}
 
-label#label-margin {display:block;width:100px;}
+label#label-margin {display:inline-block;width:100px;}
 #margin-auto {margin:auto!important;float:none!important;}
 
 .blogFoto {width:300px;float:left;padding:5px 10px 10px 0px;}
