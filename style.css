@@ -25,7 +25,7 @@ main {
 header { background-color: #FF7400;padding:20px;}
 
 #label-margin {width:100px;}
-.margin-auto {margin-auto;}
+.margin-auto {margin:auto;}
 
 .blogFoto {width:300px;float:left;padding:5px 10px 10px 0px;}
 
@@ -59,7 +59,7 @@ nav ul li {display:inline;font-size:16px;padding:24px 24px 24px 0px;}
 
 }
 
-label {width:20%;}
+
 
 .grid-container {padding-top:20px;}
 
