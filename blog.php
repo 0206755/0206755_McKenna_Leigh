@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>My Blog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -32,9 +32,29 @@
         <div class="grid-66">
             <section class="container blog-item" id="contentLeft">
             <article>
-            Title by [Submitter]
-                [Category]
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                include("connect2DB.php");
+                $sql = "SELECT * from blogView'";
+
+                $result = mysqli_query($db, $sql);
+                $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+
+
+                // keeps getting the next row until there are no more to get
+                while($row = mysqli_fetch_array( $result )) {
+                // Print out the contents of each row into a table
+                echo "<p>";
+                    echo $row['entryTitle'];
+                    echo "<br /><br />";
+                    echo $row['entrySummary'];
+                    echo "<br /><br />";
+                    echo $row['category'];
+                    echo "<br /><br />";
+                    echo $row['submitter'];
+
+                    echo "</p>";
+                }
+
+
             </article>
             </section>
         </div>
