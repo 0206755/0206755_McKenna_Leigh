@@ -40,9 +40,9 @@
                 $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
 
-                // keeps getting the next row until there are no more to get
+                
                 while($row = mysqli_fetch_array( $result )) {
-                // Print out the contents of each row into a table
+                // Print out the contents
                 echo "<p>";
                     echo $row['entryTitle'];
                     echo "<br /><br />";
