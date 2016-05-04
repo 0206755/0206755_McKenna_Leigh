@@ -59,6 +59,8 @@ nav ul li {display:inline;font-size:16px;padding:24px 24px 24px 0px;}
 
 }
 
+label {width:20%;}
+
 .grid-container {padding-top:20px;}
 
 footer {background-color:#FF7400;padding:20px;color:white;text-align:left;}
