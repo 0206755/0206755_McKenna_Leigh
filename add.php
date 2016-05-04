@@ -32,8 +32,8 @@
         <div class="grid-66" id="margin-auto">
             <h1>Add Blog Item</h1>
             <section class="container" id="contentLeft">
-            <? php
-            if ($SERVER['REQUEST_METHOD'] === 'GET') {
+            <?php
+            if ($SERVER['REQUEST_METHOD'] === 'GET') {?>
                 <form action="add.php" method="post">
             <label id="label-margin">Entry Title:</label> <input type="text" name="entry_title" required><br />
                 <label id="label-margin">Entry Summary:</label> <textarea name="entry_summary" required></textarea><br />
@@ -49,7 +49,7 @@
                 <input type="submit" name="submit" value="submit">
 
             </form>
-            }
+           <?php  }
             elseif ($SERVER[REQUEST_METHOD] === 'POST') {
 
                 $entryTitle = $_GET['entryTitle'];
